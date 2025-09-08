@@ -10,7 +10,7 @@ loginForm.addEventListener('submit', (e) => {
   // Validación básica de prototipo
   if (username === 'admin' && password === '1234') {
     // Redirigir al dashboard o página principal del backoffice
-    window.location.href = 'usuarios.html';
+    window.location.href = 'dashboard.html';
   } else {
     errorMsg.style.display = 'block';
   }

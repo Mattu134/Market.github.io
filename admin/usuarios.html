@@ -4,18 +4,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="author" content="">
-  <meta name="keywords" content="">
-  <meta name="description" content="Backoffice FoodMart">
+  <meta name="description" content="Backoffice FoodMart - Usuarios">
 
   <title>FoodMart Backoffice - Usuarios</title>
 
   <!-- Librerías externas -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
 
   <!-- CSS de la plantilla FoodMart -->
   <link rel="stylesheet" type="text/css" href="css/vendor.css">
@@ -33,7 +27,9 @@
   <!-- Navbar superior -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">FoodMart Backoffice</a>
+      <a class="navbar-brand" href="dashboard.html">
+        <img src="../images/logo.png" alt="Logo Ecomarket" class="img-fluid">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -43,35 +39,15 @@
             <a class="nav-link" href="#">Perfil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Cerrar sesión</a>
+            <a class="nav-link" href="index.html">Cerrar sesión</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container-fluid">
-    <div class="row">
-      <!-- Sidebar -->
-      <div class="col-md-3 col-lg-2 bg-light sidebar pt-3 vh-100">
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Usuarios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Ventas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pedidos</a>
-          </li>
-        </ul>
-      </div>
-
       <!-- Contenido principal -->
-      <div class="col-md-9 col-lg-10 pt-3">
+      <div class="col-md-9 col-lg-10 pt-4">
         <div class="d-flex justify-content-between align-items-center mb-3">
           <h2>Usuarios</h2>
           <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#usuarioModal">Agregar Usuario</button>
@@ -96,8 +72,8 @@
                 <td>juan@example.com</td>
                 <td>Administrador</td>
                 <td>
-                  <button class="btn btn-sm btn-warning">Editar</button>
-                  <button class="btn btn-sm btn-danger">Eliminar</button>
+                  <button class="btn btn-sm btn-warning editar">Editar</button>
+                  <button class="btn btn-sm btn-danger eliminar">Eliminar</button>
                 </td>
               </tr>
               <tr>
@@ -106,8 +82,8 @@
                 <td>maria@example.com</td>
                 <td>Empleado</td>
                 <td>
-                  <button class="btn btn-sm btn-warning">Editar</button>
-                  <button class="btn btn-sm btn-danger">Eliminar</button>
+                  <button class="btn btn-sm btn-warning editar">Editar</button>
+                  <button class="btn btn-sm btn-danger eliminar">Eliminar</button>
                 </td>
               </tr>
             </tbody>
@@ -151,8 +127,9 @@
   </div>
 
   <!-- JS de Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-ENjdO4Dr2bkBIFxQpeoK9lnzY8+ghlLJ7MQ9tkj3Z5aMGaC6Yk5t9UJ0ZKfQ2s5R"
-          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS personalizado de usuarios -->
+  <script src="js/usuarios.js"></script>
 </body>
 </html>
