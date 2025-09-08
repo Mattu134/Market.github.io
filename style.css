@@ -392,7 +392,7 @@ h1,h2,h3,h4,h5,h6 {
   transition: background 0.3s ease-out;
 }
 .banner-ad .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
-  background: #FFC43F;
+  background: rgb(53, 255, 105);
 }
 .banner-ad .swiper-slide {
   min-height: 630px;
@@ -408,7 +408,7 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Garamond';
   font-size: 37px;
   text-transform: capitalize;
-  color: var(--dark-color);
+  color: rgb(53, 255, 105);
 }
 .banner-ad .banner-content .sale {
   position: relative;
