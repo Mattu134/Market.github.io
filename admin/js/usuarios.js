@@ -22,11 +22,11 @@ function crearActualizarFilaUsuario(id, nombre, email, rol) {
     // Crear fila nueva
     tr = document.createElement('tr');
     tr.innerHTML = `
-      <td>${id}</td>
-      <td>${nombre}</td>
-      <td>${email}</td>
-      <td>${rol}</td>
-      <td>
+      <td data-label="ID">${id}</td>
+      <td data-label="Nombre">${nombre}</td>
+      <td data-label="Email">${email}</td>
+      <td data-label="Rol">${rol}</td>
+      <td data-label="Acciones">
         <button class="btn btn-sm btn-warning editar">Editar</button>
         <button class="btn btn-sm btn-danger eliminar">Eliminar</button>
       </td>
