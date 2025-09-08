@@ -7,9 +7,7 @@ loginForm.addEventListener('submit', (e) => {
   const username = document.getElementById('username').value.trim();
   const password = document.getElementById('password').value.trim();
 
-  // Validación básica de prototipo
   if (username === 'admin' && password === '1234') {
-    // Redirigir al dashboard o página principal del backoffice
     window.location.href = 'dashboard.html';
   } else {
     errorMsg.style.display = 'block';
